@@ -1,0 +1,533 @@
+/*Color de los botones segun el tipo de pokemon*/
+
+.all{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 10px 0px var(--normal);
+}
+.fire{
+    border: 2px solid var(--fire);
+    box-shadow: 0px 0px 10px 0px var(--fire);
+}
+.flying{
+    border: 2px solid var(--flying);
+    box-shadow: 0px 0px 10px 0px var(--flying);
+}
+.poison{
+    border: 2px solid var(--poison);
+    box-shadow: 0px 0px 10px 0px var(--poison);
+}
+.ghost{
+    border: 2px solid var(--ghost);
+    box-shadow: 0px 0px 10px 0px var(--ghost);
+}
+.steel{
+    border: 2px solid var(--steel);
+    box-shadow: 0px 0px 10px 0px var(--steel);
+}
+.ground{
+    border: 2px solid var(--ground);
+    box-shadow: 0px 0px 10px 0px var(--ground);
+}
+.rock{
+    border: 2px solid var(--rock);
+    box-shadow: 0px 0px 10px 0px var(--rock);
+}
+.grass{
+    border: 2px solid var(--grass);
+    box-shadow: 0px 0px 10px 0px var(--grass);
+}
+.water{
+    border: 2px solid var(--water);
+    box-shadow: 0px 0px 10px 0px var(--water);
+}
+.electric{
+    border: 2px solid var(--electric);
+    box-shadow: 0px 0px 10px 0px var(--electric);
+}
+.fairy{
+    border: 2px solid var(--fairy);
+    box-shadow: 0px 0px 10px 0px var(--fairy);
+}
+.psychic{
+    border: 2px solid var(--pychic);
+    box-shadow: 0px 0px 10px 0px var(--pychic);
+}
+.dragon{
+    border: 2px solid var(--dragon);
+    box-shadow: 0px 0px 10px 0px var(--dragon);
+}
+.ice{
+    border: 2px solid var(--ice);
+    box-shadow: 0px 0px 10px 0px var(--ice);
+}
+.bug{
+    border: 2px solid var(--bug);
+    box-shadow: 0px 0px 10px 0px var(--bug);
+}
+.normal{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 10px 0px var(--normal);
+}
+.fighting{
+    border: 2px solid var(--fighting);
+    box-shadow: 0px 0px 10px 0px var(--fighting);
+}
+
+/*Colores para la categorias dentro de las cartas*/
+
+.fire_c{
+    border: 2px solid var(--fire);
+    box-shadow: 0px 0px 10px 0px var(--fire);
+    background-color: var(--fire);
+    color: #ffffff;
+}
+.flying_c{
+    border: 2px solid var(--flying);
+    box-shadow: 0px 0px 10px 0px var(--flying);
+    background-color: var(--flying);
+}
+.poison_c{
+    border: 2px solid var(--poison);
+    box-shadow: 0px 0px 10px 0px var(--poison);
+    background-color: var(--poison);
+    color: #ffffff;
+}
+.ghost_c{
+    border: 2px solid var(--ghost);
+    box-shadow: 0px 0px 10px 0px var(--ghost);
+    background-color: var(--ghost);
+}
+.steel_c{
+    border: 2px solid var(--steel);
+    box-shadow: 0px 0px 10px 0px var(--steel);
+    background-color: var(--steel);
+}
+.ground_c{
+    border: 2px solid var(--ground);
+    box-shadow: 0px 0px 10px 0px var(--ground);
+    background-color: var(--ground);
+}
+.rock_c{
+    border: 2px solid var(--rock);
+    box-shadow: 0px 0px 10px 0px var(--rock);
+    background-color: var(--rock);
+}
+.grass_c{
+    border: 2px solid var(--grass);
+    box-shadow: 0px 0px 10px 0px var(--grass);
+    background-color: var(--grass);
+}
+.water_c{
+    border: 2px solid var(--water);
+    box-shadow: 0px 0px 10px 0px var(--water);
+    background-color: var(--water);
+    color: #ffffff;
+}
+.electric_c{
+    border: 2px solid var(--electric);
+    box-shadow: 0px 0px 10px 0px var(--electric);
+    background-color: var(--electric);
+}
+.fairy_c{
+    border: 2px solid var(--fairy);
+    box-shadow: 0px 0px 10px 0px var(--fairy);
+    background-color: var(--fairy);
+}
+.psychic_c{
+    border: 2px solid var(--pychic);
+    box-shadow: 0px 0px 10px 0px var(--pychic);
+    background-color: var(--pychic);
+    color: #ffffff;
+}
+.dragon_c{
+    border: 2px solid var(--dragon);
+    box-shadow: 0px 0px 10px 0px var(--dragon);
+    background-color: var(--dragon);
+    color: #ffffff;
+}
+.ice_c{
+    border: 2px solid var(--ice);
+    box-shadow: 0px 0px 10px 0px var(--ice);
+    background-color: var(--ice);
+}
+.bug_c{
+    border: 2px solid var(--bug);
+    box-shadow: 0px 0px 10px 0px var(--bug);
+    background-color: var(--bug);
+}
+.normal_c{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 10px 0px var(--normal);
+    background-color: var(--normal);
+}
+.fighting_c{
+    border: 2px solid var(--fighting);
+    box-shadow: 0px 0px 10px 0px var(--fighting);
+    background-color: var(--fighting);
+}
+
+/*Colores para la sombras externas de las cartas*/
+
+.categoria_carta_fire{
+    border: 2px solid var(--fire);
+    box-shadow: 0px 0px 15px 0px var(--fire);
+}
+.categoria_carta_flying{
+    border: 2px solid var(--flying);
+    box-shadow: 0px 0px 15px 0px var(--flying);
+    
+}
+.categoria_carta_poison{
+    border: 2px solid var(--poison);
+    box-shadow: 0px 0px 15px 0px var(--poison);
+
+}
+.categoria_carta_ghost{
+    border: 2px solid var(--ghost);
+    box-shadow: 0px 0px 15px 0px var(--ghost);
+}
+.categoria_carta_steel{
+    border: 2px solid var(--steel);
+    box-shadow: 0px 0px 15px 0px var(--steel);
+}
+.categoria_carta_ground{
+    border: 2px solid var(--ground);
+    box-shadow: 0px 0px 15px 0px var(--ground);
+}
+.categoria_carta_rock{
+    border: 2px solid var(--rock);
+    box-shadow: 0px 0px 15px 0px var(--rock)
+}
+.categoria_carta_grass{
+    border: 2px solid var(--grass);
+    box-shadow: 0px 0px 15px 0px var(--grass);
+
+}
+.categoria_carta_water{
+    border: 2px solid var(--water);
+    box-shadow: 0px 0px 15px 0px var(--water)
+}
+.categoria_carta_electric{
+    border: 2px solid var(--electric);
+    box-shadow: 0px 0px 15px 0px var(--electric);
+}
+.categoria_carta_fairy{
+    border: 2px solid var(--fairy);
+    box-shadow: 0px 0px 15px 0px var(--fairy)
+}
+.categoria_carta_psychic{
+    border: 2px solid var(--pychic);
+    box-shadow: 0px 0px 15px 0px var(--pychic);
+}
+.categoria_carta_dragon{
+    border: 2px solid var(--dragon);
+    box-shadow: 0px 0px 15px 0px var(--dragon);
+}
+.categoria_carta_ice{
+    border: 2px solid var(--ice);
+    box-shadow: 0px 0px 15px 0px var(--ice);
+}
+.categoria_carta_bug{
+    border: 2px solid var(--bug);
+    box-shadow: 0px 0px 15px 0px var(--bug);
+}
+.categoria_carta_normal{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 15px 0px var(--normal);
+
+}
+.categoria_carta_fighting{
+    border: 2px solid var(--fighting);
+    box-shadow: 0px 0px 15px 0px var(--fighting);
+}
+
+/*Clases para cambiar el fondo*/
+
+.img_fondo_fire{
+    background-image: url(../img/circulos_fondo/circle_background_fire.png);
+}
+.img_fondo_flying{
+    background-image: url(../img/circulos_fondo/circle_background_flying.png);
+}
+.img_fondo_poison{
+    background-image: url(../img/circulos_fondo/circle_background_poison.png);
+}
+.img_fondo_ghost{
+    background-image: url(../img/circulos_fondo/circle_background_ghost.png);
+}
+.img_fondo_steel{
+    background-image: url(../img/circulos_fondo/circle_background_steel.png);
+}
+.img_fondo_ground{
+    background-image: url(../img/circulos_fondo/circle_background_ground.png);
+}
+.img_fondo_rock{
+    background-image: url(../img/circulos_fondo/circle_background_rock.png);
+}
+.img_fondo_grass{
+    background-image: url(../img/circulos_fondo/circle_background_grass.png);
+}
+.img_fondo_water{
+    background-image: url(../img/circulos_fondo/circle_background_water.png);
+}
+.img_fondo_electric{
+    background-image: url(../img/circulos_fondo/circle_background_electric.png);
+}
+.img_fondo_fairy{
+    background-image: url(../img/circulos_fondo/circle_background_fairy.png);
+}
+.img_fondo_psychic{
+    background-image: url(../img/circulos_fondo/circle_background_psychic.png);
+}
+.img_fondo_dragon{
+    background-image: url(../img/circulos_fondo/circle_background_dragon.png);
+}
+.img_fondo_ice{
+    background-image: url(../img/circulos_fondo/circle_background_ice.png);
+}
+.img_fondo_bug{
+    background-image: url(../img/circulos_fondo/circle_background_bug.png);
+}
+.img_fondo_normal{
+    background-image: url(../img/circulos_fondo/circle_background_normal.png);
+}
+.img_fondo_fighting{
+    background-image: url(../img/circulos_fondo/circle_background_fighting.png);
+}
+
+/*Clases para cambiar el borde de las estadisticas*/
+
+.estadistica_borde_fire{
+    border: 2px solid var(--fire);
+}
+.estadistica_borde_flying{
+    border: 2px solid var(--flying);
+}
+.estadistica_borde_poison{
+    border: 2px solid var(--poison);
+}
+.estadistica_borde_ghost{
+    border: 2px solid var(--ghost);
+}
+.estadistica_borde_steel{
+    border: 2px solid var(--steel);
+}
+.estadistica_borde_ground{
+    border: 2px solid var(--ground);
+}
+.estadistica_borde_rock{
+    border: 2px solid var(--rock);
+}
+.estadistica_borde_grass{
+    border: 2px solid var(--grass);
+}
+.estadistica_borde_water{
+    border: 2px solid var(--water);
+}
+.estadistica_borde_electric{
+    border: 2px solid var(--electric);
+}
+.estadistica_borde_fairy{
+    border: 2px solid var(--fairy);
+}
+.estadistica_borde_psychic{
+    border: 2px solid var(--pychic);
+}
+.estadistica_borde_dragon{
+    border: 2px solid var(--dragon);
+}
+.estadistica_borde_ice{
+    border: 2px solid var(--ice);
+}
+.estadistica_borde_bug{
+    border: 2px solid var(--bug);
+}
+.estadistica_borde_normal{
+    border: 2px solid var(--normal);
+}
+.estadistica_borde_fighting{
+    border: 2px solid var(--fighting);
+}
+
+/*Clases para cambiar el color de los circulos degradados del fondo en la carta grande*/
+
+.degradado_fire{
+    background: radial-gradient(var(--fire) 10px, transparent);
+}
+.degradado_flying{
+    background: radial-gradient(var(--flying) 10px, transparent);
+}
+.degradado_poison{
+    background: radial-gradient(var(--poison) 10px, transparent);
+}
+.degradado_ghost{
+    background: radial-gradient(var(--ghost) 10px, transparent);
+}
+.degradado_steel{
+    background: radial-gradient(var(--steel) 10px, transparent);
+}
+.degradado_ground{
+    background: radial-gradient(var(--ground) 10px, transparent);
+}
+.degradado_rock{
+    background: radial-gradient(var(--rock) 10px, transparent);
+}
+.degradado_grass{
+    background: radial-gradient(var(--grass) 10px, transparent);
+}
+.degradado_water{
+    background: radial-gradient(var(--water) 10px, transparent);
+}
+.degradado_electric{
+    background: radial-gradient(var(--electric) 10px, transparent);
+}
+.degradado_fairy{
+    background: radial-gradient(var(--fairy) 10px, transparent);
+}
+.degradado_psychic{
+    background: radial-gradient(var(--pychic) 10px, transparent);
+}
+.degradado_dragon{
+    background: radial-gradient(var(--dragon) 10px, transparent);
+}
+.degradado_ice{
+    background: radial-gradient(var(--ice) 10px, transparent);
+}
+.degradado_bug{
+    background: radial-gradient(var(--bug) 10px, transparent);
+}
+.degradado_normal{
+    background: radial-gradient(var(--normal) 10px, transparent);
+}
+.degradado_fighting{
+    background: radial-gradient(var(--fighting) 10px, transparent);
+}
+
+/*Clases para los befores, las cajitas decorativas*/
+.before_fire::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--fire);
+    box-shadow: 0px 0px 10px 0px var(--fire);
+}
+
+.before_water::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--water);
+    box-shadow: 0px 0px 10px 0px var(--water);
+}
+.before_grass::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--grass);
+    box-shadow: 0px 0px 10px 0px var(--grass);
+}
+.before_poison::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--poison);
+    box-shadow: 0px 0px 10px 0px var(--poison);
+}
+.before_rock::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--rock);
+    box-shadow: 0px 0px 10px 0px var(--rock);
+}
+.before_electric::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--electric);
+    box-shadow: 0px 0px 10px 0px var(--electric);
+}
+.before_fighting::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--fighting);
+    box-shadow: 0px 0px 10px 0px var(--fighting);
+}
+.before_steel::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--steel);
+    box-shadow: 0px 0px 10px 0px var(--steel);
+}
+.before_ground::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--ground);
+    box-shadow: 0px 0px 10px 0px var(--ground);
+}
+.before_fairy::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--fairy);
+    box-shadow: 0px 0px 10px 0px var(--fairy);
+}
+.before_dragon::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--dragon);
+    box-shadow: 0px 0px 10px 0px var(--dragon);
+}
+.before_ice::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--ice);
+    box-shadow: 0px 0px 10px 0px var(--ice);
+}
+.before_bug::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--bug);
+    box-shadow: 0px 0px 10px 0px var(--bug);
+}
+.before_normal::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: -2.5px;
+    background-color: var(--normal);
+    box-shadow: 0px 0px 10px 0px var(--normal);
+}

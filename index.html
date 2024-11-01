@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/102564fd60.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/icon_pokebola.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/cartas_poke.css">
+    <link rel="stylesheet" href="assets/css/style_titulo.css">
+    <link rel="stylesheet" href="assets/css/color_categoria.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>POKE-API</title>
+</head>
+<body>
+    <!--Frame de presentacion-->
+    <ul class="container_titulo">
+        <li class="letras_titulo">P</li>
+        <li class="letras_titulo">O</li>
+        <li class="letras_titulo">K</li>
+        <li class="letras_titulo">E</li>
+        <li class="letras_titulo">M</li>
+        <li class="letras_titulo">O</li>
+        <li class="letras_titulo">N</li>
+        <li class="letras_titulo-responsive">POKE</li>
+        <li class="letras_titulo-responsive">MON</li>
+    </ul>
+    <!--Barra de navegacion-->
+    <div action="index.html" method="post" target="_blank" class="nav_bar">
+        <div class="title_nav">
+            <img src="assets/img/icon_pokebola.png" alt="" class="icon_poke">
+            <h1 class="title_nav_h1">POKEDEX</h1>
+        </div>
+        <div class="container_search">
+            <div class="container_item-search container_item-search--change">
+                <i class="fa-solid fa-bars" id="icon_menu"></i>
+                <div class="item_search-input">
+                    <input type="search" name="busquedacodigo" size="20" placeholder="Buscador" class="search_input" id="search_input">
+                    <i class="fa-solid fa-magnifying-glass" id="button_search"></i><!--Simbolo del buscador-->   
+                </div> 
+            </div>
+            <!--CONTENEDOR DONDE ESTÁN LAS OPCIONES PARA NAVEGAR ENTRE DIFERENTES PAGINAS-->
+            <div class="container_item-search container_item-search--no_ver">
+                <a href="pages/quiz.html" class="item_search"><i class="fa-regular fa-circle-question"></i></a>
+                <a href="pages/location.html" class="item_search"><i class="fa-regular fa-compass"></i></a>
+                <a href="pages/pokeball.html" class="item_search"><i class="fa-solid fa-life-ring"></i></a>
+                <a href="index.html" class="item_search"><i class="fa-solid fa-house"></i></a>   
+            </div>
+
+            <i class="fa-solid fa-filter" id="button_filters"></i>
+            <img src="assets/img/icon_pokebola.png" alt="" class="icon_poke"> 
+        </div>
+    </div>
+    <!--Menú responsive para telefonos-->
+    <div class="container_item-search--responsive move_menu">
+        <i class="fa-regular fa-circle-xmark" id="icon_menu-close"></i>
+        <div class="box_item-search--responsive">
+            <a href="index.html" class="item_search--responsive_a">
+                <i class="fa-solid fa-house item_search--responsive_i"></i>
+                <p class="item_search--responsive_p">INICIO</p>
+                <i class="fa-solid fa-house item_search--responsive_i"></i>
+            </a>
+            <a href="pages/quiz.html" class="item_search--responsive_a">
+                <i class="fa-regular fa-circle-question item_search--responsive_i"></i>
+                <p class="item_search--responsive_p">QUIZ</p>
+                <i class="fa-regular fa-circle-question item_search--responsive_i"></i>
+            </a>
+            <a href="pages/location.html" class="item_search--responsive_a">
+                <i class="fa-regular fa-compass item_search--responsive_i"></i>
+                <p class="item_search--responsive_p">Locaciones</p>
+                <i class="fa-regular fa-compass item_search--responsive_i"></i>
+            </a>
+            <a href="pages/pokeballs.html" class="item_search--responsive_a">
+                <i class="fa-regular fa-face-frown item_search--responsive_i"></i>
+                <p class="item_search--responsive_p">Pokeballs</p>
+                <i class="fa-regular fa-face-frown item_search--responsive_i"></i>
+            </a>
+        </div>
+    </div>
+    <!--Caja de los filtros, es decir el tipo de pokemon-->
+    <div class="container_filters" id="box_filters">
+        <button class="button_filters_items all" id="see-all">Ver todos</button>
+        <button class="button_filters_items normal" id="normal">Normal</button>
+        <button class="button_filters_items fire" id="fire">Fuego</button>
+        <button class="button_filters_items flying" id="flying">Volador</button>
+        <button class="button_filters_items poison" id="poison">Veneno</button>
+        <button class="button_filters_items steel" id="steel">Acero</button>
+        <button class="button_filters_items ghost" id="ghost">Fanstama</button>
+        <button class="button_filters_items ground" id="ground">Tierra</button>
+        <button class="button_filters_items rock" id="rock">Roca</button>
+        <button class="button_filters_items grass" id="grass">Planta</button>
+        <button class="button_filters_items water" id="water">Agua</button>
+        <button class="button_filters_items electric" id="electric">Eléctrico</button>
+        <button class="button_filters_items fairy" id="fairy">Hada</button>
+        <button class="button_filters_items psychic" id="psychic">Psiquico</button>
+        <button class="button_filters_items dragon" id="dragon">Dragón</button>
+        <button class="button_filters_items ice" id="ice">Hielo</button>
+        <button class="button_filters_items bug" id="bug">Bicho</button>
+        <button class="button_filters_items fighting" id="fighting">Lucha</button>
+    </div>
+
+    <main>
+        
+        <div class="all_container" id="all_pokemon">
+
+        </div>
+        <div class="container_error">
+            <img src="assets/img/pikachu_triste.png" alt="">
+            <div class="error_texto">
+                <p class="texto_error">¡Lo sentimos!, el pokemon que buscas no se encuentra.</p>
+                <p class="texto_error">Revisa si estás escribiendo correctamente el nombre o de por si eres awebado</p>    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_all_container">
+            
+            <div class="footer_item_animation"></div>
+            <div class="footer_container_items">
+                <div class="footer_container_sena">
+                    <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" class="title_sena"><h2>SENA</h2></a>
+                </div>
+                <div class="container_info">
+                    <a href="pages/nosotros.html" style="text-decoration: none;">
+                        <h2 class="info_title">
+                            Creadores
+                        </h2>   
+                    </a>
+
+                    <ul class="info_list">
+                        <li class="info_list_item">Juan José Cespedes</li>
+                        <li class="info_list_item">Juan José Cuartas</li>
+                        <li class="info_list_item">Luis Miguel Ibarguen</li>
+                    </ul>
+                </div>   
+            </div>
+
+        </div>
+        
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/primer.js"></script>
+    <script src="js/nav_bar.js"></script>
+</body>
+</html>

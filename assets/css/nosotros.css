@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Tektur';
+}
+
+body{
+  background-image: url(../img/fondo_ladrillos.jpg);
+  background-size: cover;
+}
+
+main{
+  margin: 5% 0px;
+}
+
+.contenedor_informacion{
+  /*Caja padre donde se contiene los integrantes*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-inline: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contenedor_integrantes{
+    /*Caja de cada integrante*/
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #D9D9D920;
+    padding: 20px;
+    gap: 15px;
+}
+
+.integrante_title{
+    /*Titulo de cada integrante*/
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.contenedor_integrante-img{
+    /*Contenedor de la imagen*/
+    width: 100%;
+    height: 400px;
+}
+
+.imagenes_creadores{
+    /*Imagen de cada integrante*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contenedor_integrantes-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*--------Execpciones segun el integrante---------*/
+
+/*Color del titulo y su animacion*/
+.cespedes_title{
+    color: rgb(0, 136, 255);
+    animation: titilacion1 5s infinite alternate;
+    /*Color de Juan Jose Cespedes Villota, gei*/
+}
+
+.cuartas_title{
+  color: #c237db;
+  animation: titilacion 5s infinite alternate;
+  /*Color del poderosisimo Juan Jose Cuartas*/
+}
+
+.ibarguen_title{
+  color: rgb(253, 0, 211);
+  animation: titilacion3 5s infinite alternate;
+  /*Color de Luis Miguel Ibarguen David nya*/
+}
+
+/*Cajas generales de cada integrante*/
+.cespedes{
+    box-shadow: 0px 0px 20px 0px rgb(0,136,255);
+    border: 2px solid rgb(0,136,255);
+    color: rgb(0,136,255);
+}
+
+.cuartas{
+    box-shadow: 0px 0px 20px 0px #c237db;
+    border: 2px solid #c237db;
+    color: #c237db;
+}
+
+.ibarguen{
+    box-shadow: 0px 0px 20px 0px rgb(253,0,211);
+    border: 2px solid rgb(253,0,211);
+    color: rgb(253,0,211);
+}
+
+/*---------Fin de excepciones---------*/
+/*Animaciones de los textos de cada integrante*/
+
+@keyframes titilacion1 {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    33% {
+        color: rgb(0, 136, 255);
+    }
+    66% {
+        color: aliceblue;
+    }
+    100% {
+        color: rgb(0, 136, 255);
+    }
+}
+  
+@keyframes titilacion {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    33% {
+        color: #c237db;
+    }
+    66% {
+        color: aliceblue;
+    }
+    100% {
+        color: #c237db;
+    }
+}
+
+@keyframes titilacion3 {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    33% {
+        color:rgb(253, 0, 211);
+    }
+    66% {
+        color: aliceblue;
+    }
+    100% {
+        color: rgb(253, 0, 211);
+    }
+}
+
+/*----------RESPONSIVE----------*/
+
+@media screen and (max-width: 420px){
+    
+    main{
+        margin: 10% 0px;
+    }
+
+    .contenedor_integrantes{
+        width: 300px;
+    }
+
+    .contenedor_integrante-img{
+        height: 350px;
+    }
+}

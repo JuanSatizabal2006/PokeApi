@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--fuente);
+}
+
+body{
+background-color: #000000;
+}
+
+/*Modificaciones al scroll */
+body::-webkit-scrollbar {
+    width: 12px;
+    }
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+}
+
+/*Variables CSS*/
+/*Frame de presentacion*/
+.container_titulo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    background-color: #000000;
+    z-index: 1000;
+}
+
+.letras_titulo{
+    font-size: 7em;
+    list-style: none;
+    font-family: var(--fuente);
+    text-shadow: none;
+    animation: animation_titulo2 2s infinite alternate;
+}
+
+.letras_titulo-responsive{
+    font-size: 10em;
+    list-style: none;
+    font-family: var(--fuente);
+    text-shadow: none;
+    animation: animation_titulo2 2s infinite alternate;
+    display: none;
+}
+/*Fin del frame de presentacion*/
+
+@keyframes animation_titulo2 {
+    0%{
+        color: #ffffff;
+        text-shadow: none;
+    }
+    10%{
+        color: #000000;
+        text-shadow:0px 0px 20px #ff9900,0px 0px 7px #eb6a00;
+    }
+    20%{
+        color: #ffffff;
+        text-shadow: 0px 0px 7px #ff9900,0px 0px 20px #eb6a00;
+    }
+    35%{
+        color: #000000;
+        text-shadow: none;
+    }
+    55%{
+        color: #bbbbb2;
+        text-shadow: 0px 0px 7px #fff900,0px 0px 20px #ff6c00; 
+    }
+    100%{
+        color: #fffb00;
+        text-shadow: 0px 0px 7px #fff900, 0px 0px 20px #ff6c00;
+    }
+}
+
+
+
+/*Contenedor padre*/
+.nav_bar{
+    width: 100%;
+    font-family: var(--fuente);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 3rem;
+    margin-top: 30px;
+}
+
+.nav_bar h1{
+    color: var(--yellow);
+    letter-spacing: 20px;
+    text-shadow: 0px 0px 7px var(--yellow),0px 0px 20px var(--orange);
+    font-size: 2em;
+}
+/*RESPONSIVEEEEEE*/
+@media screen and (max-width: 420px) {
+    /* Frame de presentacion*/
+    .container_titulo{
+        gap: 0px;
+        flex-direction: column;
+    }
+    .letras_titulo{
+        display: none;
+    }
+    .letras_titulo-responsive{
+        font-size: 5em;
+        display: block;
+    }
+    .nav_bar h1{
+        font-size: 1.8em;
+    }
+}
