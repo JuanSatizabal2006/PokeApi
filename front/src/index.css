@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--fuente);
+}
+
+body{
+    background-image: url(./public/img/fondoLadrillos.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Modificaciones al scroll */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+}
+
+:root{
+    --fuente: 'Tektur',monospace;
+    --yellow: #fff900;
+    --orange: #ff6c00;
+    /*Variables de los colores segun el tipo de pokemon*/
+    --fire : #ff3d00;
+    --flying: #a0aac4;
+    --poison: #70478a;
+    --ghost: #a971a0;
+    --steel: #8490ad;
+    --ground: #e7c37d;
+    --rock: #8a6b47;
+    --grass: #69e649;
+    --water: #0047ff;
+    --electric: #ffe500;
+    --fairy: #bb9636;
+    --pychic: #cf5ad9;
+    --dragon: #8108ac;
+    --ice: #00c2ff;
+    --bug: #c7ff51;
+    --normal: #ffffff;
+    --fighting: #ff7a00;
+}
