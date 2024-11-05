@@ -1,0 +1,108 @@
+.carta_info_categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carta_item-categoria{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .25rem 1rem;
+    font-size: .8em;
+    font-weight: 550;
+}
+
+/*Colores para la categorias dentro de las cartas TYPES*/
+.type_fire{
+    border: 2px solid var(--fire);
+    box-shadow: 0px 0px 10px 0px var(--fire);
+    background-color: var(--fire);
+    color: #ffffff;
+}
+.type_flying{
+    border: 2px solid var(--flying);
+    box-shadow: 0px 0px 10px 0px var(--flying);
+    background-color: var(--flying);
+}
+.type_poison{
+    border: 2px solid var(--poison);
+    box-shadow: 0px 0px 10px 0px var(--poison);
+    background-color: var(--poison);
+    color: #ffffff;
+}
+.type_ghost{
+    border: 2px solid var(--ghost);
+    box-shadow: 0px 0px 10px 0px var(--ghost);
+    background-color: var(--ghost);
+}
+.type_steel{
+    border: 2px solid var(--steel);
+    box-shadow: 0px 0px 10px 0px var(--steel);
+    background-color: var(--steel);
+}
+.type_ground{
+    border: 2px solid var(--ground);
+    box-shadow: 0px 0px 10px 0px var(--ground);
+    background-color: var(--ground);
+}
+.type_rock{
+    border: 2px solid var(--rock);
+    box-shadow: 0px 0px 10px 0px var(--rock);
+    background-color: var(--rock);
+}
+.type_grass{
+    border: 2px solid var(--grass);
+    box-shadow: 0px 0px 10px 0px var(--grass);
+    background-color: var(--grass);
+}
+.type_water{
+    border: 2px solid var(--water);
+    box-shadow: 0px 0px 10px 0px var(--water);
+    background-color: var(--water);
+    color: #ffffff;
+}
+.type_electric{
+    border: 2px solid var(--electric);
+    box-shadow: 0px 0px 10px 0px var(--electric);
+    background-color: var(--electric);
+}
+.type_fairy{
+    border: 2px solid var(--fairy);
+    box-shadow: 0px 0px 10px 0px var(--fairy);
+    background-color: var(--fairy);
+}
+.type_psychic{
+    border: 2px solid var(--pychic);
+    box-shadow: 0px 0px 10px 0px var(--pychic);
+    background-color: var(--pychic);
+    color: #ffffff;
+}
+.type_dragon{
+    border: 2px solid var(--dragon);
+    box-shadow: 0px 0px 10px 0px var(--dragon);
+    background-color: var(--dragon);
+    color: #ffffff;
+}
+.type_ice{
+    border: 2px solid var(--ice);
+    box-shadow: 0px 0px 10px 0px var(--ice);
+    background-color: var(--ice);
+}
+.type_bug{
+    border: 2px solid var(--bug);
+    box-shadow: 0px 0px 10px 0px var(--bug);
+    background-color: var(--bug);
+}
+.type_normal{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 10px 0px var(--normal);
+    background-color: var(--normal);
+}
+.type_fighting{
+    border: 2px solid var(--fighting);
+    box-shadow: 0px 0px 10px 0px var(--fighting);
+    background-color: var(--fighting);
+}

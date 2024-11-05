@@ -1,0 +1,88 @@
+/*Input buscador*/
+.search_input{
+    width: 0px;
+    height: 34px;
+    padding: 0px;
+    border-radius: 20px 0px 00px 20px;
+    border: 0px solid var(--yellow);
+    background-color: #000000;
+    box-shadow: 0px 0px 7px 0px var(--yellow),0px 0px 10px 0px var(--orange);
+    outline: none;
+    color: #ffffff;
+    font-family: var(--fuente);
+    font-size: 0px;
+    transition: all ease-in-out .5s;
+}
+
+.container_search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.container_item-search--responsive{
+    display: none;
+}
+.item_search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container_search i{
+    font-size: 2.2em;
+    color: var(--yellow);
+    text-shadow: 0px 0px 7px var(--yellow),0px 0px 10px var(--orange);
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.container_search i:hover{
+    color: var(--orange);
+    text-shadow: 0px 0px 7px var(--orange),0px 0px 10px var(--yellow);
+}
+
+.container_item-search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Clase del click del input*/
+.search_input_visible{
+    padding: 5px;
+    width: 250px;
+    border: 2px solid var(--yellow);
+    font-size: 15px;
+}
+
+/*Esto es para que el contenido del input se muestre a la derecha*/
+.search_input::placeholder, input[type="search"]{
+    text-align: right;
+}
+
+@media screen and (max-width: 420px) {
+
+    .container_search{
+        justify-items: flex-start;
+    }
+    .container_search i{
+        font-size: 2em;
+    }
+    .container_item-search{
+        flex-direction: row-reverse;
+        width: 345px;
+        justify-content: start;
+        z-index: 9999;
+    }
+    .item_search-input{
+        flex-direction: row-reverse;
+    }
+    .container_item-search--no_ver{
+        display: none;
+    }
+    .item_search{
+        /*Ocultamos los otros iconos*/
+        display: none;
+    }
+}

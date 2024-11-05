@@ -1,68 +1,12 @@
-/*Frame de presentacion*/
-.container_titulo{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 80px;
-    background-color: #000000;
-    z-index: 1000;
-}
-
-.letras_titulo{
-    font-size: 10em;
-    list-style: none;
-    font-family: var(--fuente);
-    text-shadow: none;
-    animation: animation_titulo2 2s infinite alternate;
-}
-
-.letras_titulo-responsive{
-    font-size: 10em;
-    list-style: none;
-    font-family: var(--fuente);
-    text-shadow: none;
-    animation: animation_titulo2 2s infinite alternate;
-    display: none;
-}
-/*Fin del frame de presentacion*/
-
-@keyframes animation_titulo2 {
-    0%{
-        color: #484848;
-        text-shadow: none;
-    }
-    20%{
-        color: #fff900;
-        text-shadow: 0px 0px 7px #fff900,0px 0px 20px #ff6c00;
-    }
-    35%{
-        color: #484848;
-        text-shadow: none;
-    }
-    55%{
-        color: #fff900;
-        text-shadow: 0px 0px 7px #fff900,0px 0px 20px #ff6c00; 
-    }
-    100%{
-        color: #fff900;
-        text-shadow: 0px 0px 7px #fff900, 0px 0px 20px #ff6c00;
-    }
-}
-
 /*Barra de navegacion*/
-
 /*Contenedor padre*/
-.nav_bar{
+.navBar{
     width: 100%;
     font-family: var(--fuente);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-inline: 3rem;
     margin-top: 30px;
 }
 
@@ -74,7 +18,7 @@
 }
 
 /*Titulo POKEMON mas imagen de pokebolla*/
-.title_nav{
+.titleNav{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -88,76 +32,18 @@
     display: none;
 }
 
-/*Input buscador*/
-.search_input{
-    width: 0px;
-    height: 34px;
-    padding: 0px;
-    border-radius: 20px 0px 00px 20px;
-    border: 0px solid var(--yellow);
-    background-color: #000000;
-    box-shadow: 0px 0px 7px 0px var(--yellow),0px 0px 10px 0px var(--orange);
-    outline: none;
-    color: #ffffff;
-    font-family: var(--fuente);
-    font-size: 0px;
-    transition: all ease-in-out .5s;
-}
 
-.container_search{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.container_item-search--responsive{
-    display: none;
-}
-.item_search-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.container_search i{
-    font-size: 2.2em;
-    color: var(--yellow);
-    text-shadow: 0px 0px 7px var(--yellow),0px 0px 10px var(--orange);
-    cursor: pointer;
-    transition: all ease .2s;
-}
-
-.container_search i:hover{
-    color: var(--orange);
-    text-shadow: 0px 0px 7px var(--orange),0px 0px 10px var(--yellow);
-}
-
-.container_item-search{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 #icon_menu{
     display: none;
 }
 
-/*Clase del click del input*/
-.search_input_visible{
-    padding: 5px;
-    width: 250px;
-    border: 2px solid var(--yellow);
-    font-size: 15px;
-}
 
-/*Esto es para que el contenido del input se muestre a la derecha*/
-.search_input::placeholder, input[type="search"]{
-    text-align: right;
-}
 /*Y nada mas*/
 #button_filters{
     display: none;
 }
+
 /*Caja contenedora de los filtros*/
 .container_filters{
     width: 100%;
@@ -184,23 +70,11 @@
     transform: scale(1.1);
 }
 
-/*RESPONSIVEEEEEE*/
-
+/*RESPONSIVE*/
 @media screen and (max-width: 420px) {
-    /* Frame de presentacion*/
-    .container_titulo{
-        gap: 0px;
-        flex-direction: column;
-    }
-    .letras_titulo{
-        display: none;
-    }
-    .letras_titulo-responsive{
-        font-size: 5em;
-        display: block;
-    }
+    
     /*Barra de navegacion*/
-    .nav_bar{
+    .navBar{
         padding-inline: 1rem;
         gap: 10px;
     }
@@ -211,28 +85,7 @@
     .icon_poke, .container_search img{
         display: none;
     }
-    .container_search{
-        justify-items: flex-start;
-    }
-    .container_search i{
-        font-size: 2em;
-    }
-    .container_item-search{
-        flex-direction: row-reverse;
-        width: 345px;
-        justify-content: start;
-        z-index: 9999;
-    }
-    .item_search-input{
-        flex-direction: row-reverse;
-    }
-    .container_item-search--no_ver{
-        display: none;
-    }
-    .item_search{
-        /*Ocultamos los otros iconos*/
-        display: none;
-    }
+
     #icon_menu-close{
         font-size: 2em;
         color: var(--yellow);
@@ -294,7 +147,7 @@
         /*INPUT + BOTON PARA MENU*/
         justify-content: space-between;
     }
-    .title_nav{
+    .titleNav{
         width: 100%;
         justify-content: center;
     }
@@ -360,17 +213,6 @@
 }
 
 @media screen and (width <= 900px) and (width > 420px){
-    .letras_titulo{
-        display: none;
-    }
-    .letras_titulo-responsive{
-        font-size: 10em;
-        display: block;
-    }
-    .container_titulo{
-        gap: 0px;
-        flex-direction: column;
-    }
     .icon_poke{
         display: none;
     }
@@ -380,16 +222,4 @@
     .search_input_visible{
         width: 200px;
     }
-}
-
-@media screen and (width <= 1100px) and (width > 900px){
-    .letras_titulo{
-        font-size: 6em;
-    }
-}
-
-/*CLASES JAVASCRIPT*/
-
-.move_menu{
-    transform: translate(100%);
 }

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 12px;
     padding-inline: 10px;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@
     /*Nombre del pokemon*/
 }
 
-.container_poke_img{
+.containerPokeImg{
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -40,7 +40,7 @@
     /*Imagen del pokemon*/
 }
 
-.poke_img_fondo{
+.pokeImgFondo{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -54,11 +54,11 @@
 }
 
 /*HOVER DE LAS IMAGENES DE LOS POKEMONES*/
-.container_poke_img:hover > .poke_img_fondo{
+.containerPokeImg:hover > .pokeImgFondo{
     transform: rotate(90deg);
 }
 
-.container_poke_img:hover > .imagen{
+.containerPokeImg:hover > .imagen{
     transform: scale(1.1);
 }
 
@@ -72,23 +72,6 @@
 
 .carta_info_numero p{
     font-size: 2.5em;
-}
-
-.carta_info_categoria{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.carta_item-categoria{
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: .25rem 1rem;
-    font-size: .8em;
-    font-weight: 550;
 }
 
 .carta_estadisticas{
@@ -137,22 +120,82 @@
 
 /*<----------RESPONSIVE---------->*/
 @media screen and (max-width: 420px){
-    .all_container{
-        grid-template-columns: 1fr;
-    }
+
     .texto_error{
         text-align: center;
     }
 }
 
-@media screen and (width <= 900px) and (width > 420px){
-    .all_container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+/*Colores para la sombras externas de las cartas*/
+.categoriaCarta_fire{
+    border: 2px solid var(--fire);
+    box-shadow: 0px 0px 15px 0px var(--fire);
 }
+.categoriaCarta_flying{
+    border: 2px solid var(--flying);
+    box-shadow: 0px 0px 15px 0px var(--flying);
+    
+}
+.categoriaCarta_poison{
+    border: 2px solid var(--poison);
+    box-shadow: 0px 0px 15px 0px var(--poison);
 
-@media screen and (width <= 1100px) and (width > 900px){
-    .all_container{
-        grid-template-columns: repeat(3, 1fr);
-    }
+}
+.categoriaCarta_ghost{
+    border: 2px solid var(--ghost);
+    box-shadow: 0px 0px 15px 0px var(--ghost);
+}
+.categoriaCarta_steel{
+    border: 2px solid var(--steel);
+    box-shadow: 0px 0px 15px 0px var(--steel);
+}
+.categoriaCarta_ground{
+    border: 2px solid var(--ground);
+    box-shadow: 0px 0px 15px 0px var(--ground);
+}
+.categoriaCarta_rock{
+    border: 2px solid var(--rock);
+    box-shadow: 0px 0px 15px 0px var(--rock)
+}
+.categoriaCarta_grass{
+    border: 2px solid var(--grass);
+    box-shadow: 0px 0px 15px 0px var(--grass);
+
+}
+.categoriaCarta_water{
+    border: 2px solid var(--water);
+    box-shadow: 0px 0px 15px 0px var(--water)
+}
+.categoriaCarta_electric{
+    border: 2px solid var(--electric);
+    box-shadow: 0px 0px 15px 0px var(--electric);
+}
+.categoriaCarta_fairy{
+    border: 2px solid var(--fairy);
+    box-shadow: 0px 0px 15px 0px var(--fairy)
+}
+.categoriaCarta_psychic{
+    border: 2px solid var(--pychic);
+    box-shadow: 0px 0px 15px 0px var(--pychic);
+}
+.categoriaCarta_dragon{
+    border: 2px solid var(--dragon);
+    box-shadow: 0px 0px 15px 0px var(--dragon);
+}
+.categoriaCarta_ice{
+    border: 2px solid var(--ice);
+    box-shadow: 0px 0px 15px 0px var(--ice);
+}
+.categoriaCarta_bug{
+    border: 2px solid var(--bug);
+    box-shadow: 0px 0px 15px 0px var(--bug);
+}
+.categoriaCarta_normal{
+    border: 2px solid var(--normal);
+    box-shadow: 0px 0px 15px 0px var(--normal);
+
+}
+.categoriaCarta_fighting{
+    border: 2px solid var(--fighting);
+    box-shadow: 0px 0px 15px 0px var(--fighting);
 }

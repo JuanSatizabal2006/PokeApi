@@ -1,34 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import '../assets/css/home.css'
-import CustomCard from '../components/customCard'
+import React, { useState } from "react";
+import "../assets/css/home.css";
+import CustomCard from "../components/customCard";
+import { usePokemon } from "../hooks/usePokemon";
+import InfiniteScroll from "react-infinite-scroll-component";
+import LoadingCustom from "../components/loadingCustom";
 
 const ListCustom = () => {
-
-  const [linkApi, setLinkApi] = useState("https://pokeapi.co/api/v2/pokemon")
-
-  useEffect(()=>{
-
-    const fetchApi  = async () =>{
-
-      const result = await fetch(linkApi);
-      console.log(result);
-      const data = await result.json()
-      console.log(data);
-      
-    }
-
-    fetchApi()
-  },[linkApi])
+  const { morePokemons, pokemons, more } = usePokemon();
 
   return (
-    <main className='allContainer'>
-      
-      {[1,2,3,4,5,6,7,8].map((value, index)=> (
-        <CustomCard  key={index} />
+    <InfiniteScroll
+      dataLength={pokemons.length}
+      next={morePokemons}
+      hasMore={more}
+      loader={<LoadingCustom />}
+      endMessage={<p>FIN</p>}
+      className="allContainer"
+    >
+      {pokemons.map((value, index) => (
+        <CustomCard
+          img={value.img}
+          name={value.name}
+          types={value.types}
+          id={value.id}
+          hp={value.hp}
+          atk={value.atk}
+          def={value.def}
+          key={index}
+        />
       ))}
+    </InfiniteScroll>
+  );
+};
 
-    </main>
-  )
-}
-
-export default ListCustom
+export default ListCustom;
