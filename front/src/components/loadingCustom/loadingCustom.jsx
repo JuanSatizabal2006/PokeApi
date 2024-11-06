@@ -1,4 +1,5 @@
 import React from "react";
+import './loadingCustom.css'
 
 const LoadingCustom = ({text}) => {
   return (

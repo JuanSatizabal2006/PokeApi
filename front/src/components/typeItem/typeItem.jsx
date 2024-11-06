@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/typeItem.css";
+import "./typeItem.css";
 
 const TypeItem = ({ type }) => {
 

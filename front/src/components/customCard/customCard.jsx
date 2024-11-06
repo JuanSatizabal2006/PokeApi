@@ -1,8 +1,9 @@
 import React from "react";
-import "../assets/css/customCard.css";
-import "../assets/css/colorCategoria.css";
-import { formatId } from "../helpers/formatId";
-import TypeItem from "./typeItem";
+import "./customCard.css";
+import { Link } from 'react-router-dom'
+import { formatId } from '../../helpers/formatId'
+import TypeItem from "../typeItem/typeItem";
+
 
 const CustomCard = ({ name, id, types, hp, atk, def, img }) => {
   //Categoria inicial del pokemon
@@ -14,7 +15,9 @@ const CustomCard = ({ name, id, types, hp, atk, def, img }) => {
         {name}
       </h2>
       <div className="containerPokeImg">
-        <img className="imagen enlace_big" id={id} src={img} alt="imgPoke" />
+        <Link className="pokeImgLink" to={`pokemon/${id}`}>
+          <img className="imagen enlace_big" id={id} src={img} alt="imgPoke" />
+        </Link>
         <img className={`pokeImgFondo imgFondo_${type}`} />
       </div>
       <div className="carta_info" id="carta_info">

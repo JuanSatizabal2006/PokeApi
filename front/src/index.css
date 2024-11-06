@@ -33,7 +33,7 @@
 }
 
 body{
-    background-image: url(./public/img/fondoLadrillos.jpg);
+    background-image: url(/public/img/fondoLadrillos.jpg);
     background-attachment: fixed;
     background-size: cover;
 }

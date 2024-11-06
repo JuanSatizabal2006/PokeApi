@@ -1,5 +1,9 @@
 export const formatId = (value) => {
     
+    if(!value){
+        return
+    }
+    
     const str = value.toString()
 
     if (str.length == 1) {

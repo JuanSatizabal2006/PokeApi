@@ -1,6 +1,6 @@
 import React from "react";
-import "../assets/css/title.css";
-import ScrollAnimation from "./scrollAnimation";
+import "./title.css";
+import ScrollAnimation from "../../components/scrollAnimation/scrollAnimation";
 
 const TitleHome = () => {
   return (

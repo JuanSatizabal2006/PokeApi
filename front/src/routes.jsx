@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './views/home'
-import Detail from './views/detail'
+import Home from './views/home/home'
+import Detail from './views/detail/detail'
 
 const RoutesCustom = () => {
   return (

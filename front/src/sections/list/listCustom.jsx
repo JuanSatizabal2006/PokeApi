@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "../assets/css/home.css";
-import CustomCard from "../components/customCard";
-import { usePokemon } from "../hooks/usePokemon";
+import React from "react";
+import { usePokemon } from "../../hooks/usePokemon";
 import InfiniteScroll from "react-infinite-scroll-component";
-import LoadingCustom from "../components/loadingCustom";
+import LoadingCustom from "../../components/loadingCustom/loadingCustom";
+import CustomCard from "../../components/customCard/customCard";
+import './listCustom.css'
 
 const ListCustom = () => {
   const { morePokemons, pokemons, more } = usePokemon();

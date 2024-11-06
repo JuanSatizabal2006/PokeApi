@@ -1,0 +1,35 @@
+.box_big_pokemon_stats{
+    /*Caja padre de las estadisticas*/
+    display: flex;
+    gap: 10px;
+}
+
+.big_pokemon_stats{
+    /*Caja donde se muestra el tipo de estadistica*/
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.big_pokemon_stats-data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.big_pokemon_stats_items-data, .big_pokemon_stats-items{
+    font-size: 1.2em;
+}
+
+.big_pokemon_stats-progress{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stats_items-progress{
+    /*Elementos progress del pokemon, aquellos que estan al lado de las stats*/
+    width: 50px;
+    accent-color: var(--water);
+}
