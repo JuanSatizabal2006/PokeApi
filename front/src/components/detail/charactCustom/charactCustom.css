@@ -1,0 +1,60 @@
+/*ESTILOS DE LA INFORMACION ADICIONAL DEL POKEMON*/
+.container_big_pokemon_info{
+    /*Caja padre de la info y las habilidades*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box_big_pokemon_info{
+    /*Caja donde esta la informacion del pokemon*/
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.big_pokemon_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5.5px;
+    text-align: end;
+}
+
+.big_pokemon_info-items, .big_pokemon_info_items-data, .big_pokemon_info_items-data{
+    font-size: 1.2em;
+}
+
+.big_pokemon_info-data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.span_arreglo{
+    text-transform: capitalize;/*Pone la primera letra en mayuscula pero solo funciona si solo es una palabra*/
+}
+
+.big_pokemon_button{
+    /*boton de la categoria del pokemon*/
+    font-size: 15px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: .1rem 1rem;
+    transition: transform ease-in 200ms;
+}
+
+.big_pokemon_button:hover{
+    /*Pokemon segun su categoria*/
+    transform: scale(1.1);
+}
+
+@media screen and (width <= 900px) and (width > 420px){
+    .big_pokemon_info-items, .big_pokemon_info_items-data, .big_pokemon_info_items-data{
+        font-size: 1.3em;
+    }
+}

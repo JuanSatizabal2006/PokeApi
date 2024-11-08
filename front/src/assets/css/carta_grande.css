@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fuente);
-}
-
-body{
-    background-size: cover;
-    background-image: url(../img/fondo_ladrillos.jpg);
-    color: #ffffff;
-}
 
 /*CAJA DE LOS ICONOS PARA VOLVER AL INICIO*/
 .box_button_back{
@@ -32,148 +19,13 @@ body{
     transform: scale(1.1);
 }
 
-/*TODO LO RELACIONADO CON LA CARTA GRANDE*/
-.container_big_pokemon{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(350px, 2fr) minmax(300px, 1fr);
-}
-/*ESTILO DE INFORMACION DEL NOMBRE Y ESTADISTICAS*/
-.container_big_pokemon_title-stats{
-    /*Contenedor padre donde se ve el nombre/numero del pokemon y sus estadisticas*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
 /*TEXTOS*/
 .big_pokemon_stats-items, .big_pokemon_stats_items-data, .big_pokemon_info-items, .big_pokemon_info_items-data{
     font-size: 1.2em;
 }
 
-/*ESTILOS DE LA IMAGEN DEL POKEMON*/
-.container_big_pokemon_img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.box_big_pokemon_img{
-    position: relative;
-}
-
-.big_pokemon_degradado{
-    /*Item del degradado de fondo de la imagen del pokemon*/
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(#E23903 10px, transparent);
-    /*Importante para darle ese efecto tan caracteristico*/
-    filter: blur(10px);
-    z-index: 10;
-    opacity: .4;
-}
-
-.box_big_pokemon_imagen-circulo{
-    /*Imagen del circulo que va detras del pokemon*/
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-    background-size: cover;
-    animation: rotateCircle 10s linear infinite normal;
-}
-
-.big_pokemon_imagen{
-    position: relative;
-    z-index: 30;
-    transition: transform 300ms ease-in;
-}
-
-.big_pokemon_imagen:hover{
-    transform: scale(1.1);
-}
-
-/*ESTILOS DE LA INFORMACION ADICIONAL DEL POKEMON*/
-.container_big_pokemon_info{
-    /*Caja padre de la info y las habilidades*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.box_big_pokemon_info{
-    /*Caja donde esta la informacion del pokemon*/
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.big_pokemon_info{
-    display: flex;
-    flex-direction: column;
-    gap: 5.5px;
-}
-
-.big_pokemon_button{
-    /*boton de la categoria del pokemon*/
-    font-size: 15px;
-    background-color: black;
-    color: #ffffff;
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    padding: .1rem 1rem;
-    transition: transform ease-in 200ms;
-}
-
-.big_pokemon_button:hover{
-    /*Pokemon segun su categoria*/
-    transform: scale(1.1);
-}
-.big_pokemon_info{
-    text-align: end;
-}
-
-.big_pokemon_info-data{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.big_pokemon_habilidades{
-    background-color: #D9D9D920;
-    padding: 10px 20px;
-    position: relative;
-    animation: moveInfo 800ms ease-out normal;
-}
-
-.big_pokemon_habilidades h3{
-    font-size: 1.5em;
-    letter-spacing: 3px;
-}
-
-.big_pokemon_habilidades_items-data{
-    white-space: nowrap;
-}
-.span_arreglo{
-    text-transform: capitalize;/*Pone la primera letra en mayuscula pero solo funciona si solo es una palabra*/
-}
 /*----------------------ANIMACIONES----------------------*/
-@keyframes rotateCircle {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
+
 
 @keyframes moveInfo{
     0%{
@@ -186,34 +38,9 @@ body{
 }
 /*----------------------RESPONSIVE----------------------*/
 
-@media screen and (width < 550px){
-    .container_big_pokemon{
-        grid-template-columns: 1fr;
-        height: auto;
-        gap: 15px;
-    }
-    .container_big_pokemon_title-stats{
-        gap: 15px;
-    }
-    .container_big_pokemon_info{
-        gap: 15px;
-    }
-    .container_big_pokemon_img{
-        padding-inline: 20px;
-    }
-    .big_pokemon_imagen{
-        width: 100%;
-    }
-}
-
 @media screen and (width <= 900px) and (width > 420px){
-    .container_big_pokemon{
-        grid-template-columns: minmax(350px, 1fr);
-        gap: 30px;
-    }
-    .container_big_pokemon_title-stats{
-        gap: 20px;
-    }
+
+
     .box_big_pokemon_stats{
         justify-content: center;
     }
@@ -226,13 +53,5 @@ body{
     .big_pokemon_stats-progress{
         gap: 17px;
     }
-    .big_pokemon_habilidades h3{
-        font-size: 2.5em;
-    }
-    .container_big_pokemon_img{
-        overflow: inherit;
-    }
-    .container_big_pokemon_info{
-        gap: 20px;
-    }
+    
 }

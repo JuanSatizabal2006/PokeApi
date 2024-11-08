@@ -1,0 +1,51 @@
+.box_big_pokemon_img{
+    position: relative;
+}
+
+.big_pokemon_degradado{
+    /*Item del degradado de fondo de la imagen del pokemon*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    /*Importante para darle ese efecto tan caracteristico*/
+    filter: blur(10px);
+    z-index: 10;
+    opacity: .4;
+}
+
+.big_pokemon_imagen{
+    position: relative;
+    z-index: 30;
+    transition: transform 300ms ease-in;
+}
+
+.big_pokemon_imagen:hover{
+    transform: scale(1.1);
+}
+
+.box_big_pokemon_imagen-circulo{
+    /*Imagen del circulo que va detras del pokemon*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-size: cover;
+    animation: rotateCircle 10s linear infinite normal;
+}
+
+@keyframes rotateCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (width < 550px){
+    .big_pokemon_imagen{
+        width: 100%;
+    }
+}

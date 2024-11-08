@@ -1,12 +1,8 @@
 import React from "react";
 import { formatId } from "../../../helpers/formatId";
-import './boxName.css'
+import "./boxName.css";
 
 const BoxName = ({ id, name, type }) => {
-  
-  console.log(type);
-  
-
   return (
     <div className={`box_big_pokemon_title before_${type}`}>
       <h3 className="big_pokemon_title">{name}</h3>
