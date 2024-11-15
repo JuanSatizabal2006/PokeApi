@@ -1,0 +1,18 @@
+.box_button_back{
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 20px;
+    z-index: 999;
+}
+.button_back-icon{
+    cursor: pointer;
+    font-size: 2em;
+    color: var(--yellow);
+    text-shadow: 0px 0px 7px var(--yellow),0px 0px 20px var(--orange);
+    transition: transform 200ms ease-in;
+}
+
+.button_back-icon:hover{
+    transform: scale(1.1);
+}
