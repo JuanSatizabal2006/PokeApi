@@ -80,55 +80,6 @@ body{
     gap: 20px;
 }
 
-.container_header{
-    /*Header donde está el puntaje y el boton para volver al inicio*/
-    /*border: 2px solid var(--yellow);*/
-    border-left: none;
-    border-right: none;
-    color: var(--azulNeon);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    position: relative;
-}
-
-/*Lineas superiores e inferiores con el neon, lo hago asi porque poniendo Box-Shadow a la caja en general
-no surge el efecto que se desea, el box shadow lo aplica en general aunque en los lados no tenga bordes*/
-.container_header::before{
-    /*LINEA SUPERIOR*/
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: var(--yellow);
-    box-shadow: 0px 0px 10px 0px var(--yellow);
-    top: 0;
-}
-
-.container_header::after{
-    /*LINEA INFERIOR*/
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: var(--yellow);
-    box-shadow: 0px 0px 10px 0px var(--yellow);
-    bottom: 0;
-}
-
-/*Icono del simbolo de una casita*/
-#icon_again{
-    cursor: pointer;
-}
-
-/*El texto del puntaje incluyendo el icono*/
-.item_puntaje{
-    font-size: 1.5em;
-    text-shadow: 0px 0px 10px var(--azulNeon);
-    letter-spacing: 5px;
-}
-
 .quiz{
     display: flex;
     flex-direction: column;
@@ -256,9 +207,7 @@ no surge el efecto que se desea, el box shadow lo aplica en general aunque en lo
         font-size: 1.5em;/*En el inicio tendrá 2.5em*/
     }
 
-    .container_header{
-        margin: 10px 10px 0px 10px;
-    }
+    
 
     .container_aviso{
         flex-direction: row;
