@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 
 const NavbarCustom = () => {
   return (
@@ -15,9 +16,9 @@ const NavbarCustom = () => {
             </div>
             
             <div className="container_item-search container_item-search--no_ver">
-                <a href="pages/quiz.html" className="item_search">
+                <Link to={"/quiz"} className="item_search">
                     <i className="fa-regular fa-circle-question"></i>
-                </a>
+                </Link>
             </div>
 
             <i className="fa-solid fa-filter" id="button_filters"></i>

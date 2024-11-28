@@ -1,28 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans+JP:wght@300&family=Tektur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans+JP:wght@300&family=Teko&family=Tektur&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Tektur';
-}
-:root{
-    --azulNeon: #40F2FE;
-    --yellow: #fff900;
-}
 
-body{
-    background-image: url(../img/fondo_ladrillos.jpg);
-    background-size: cover;
-}
-.all_container_quiz{
-    /*Contenedor principal, aqui estará todo lo que sea relacionado con el quiz MENOS EL TITULO*/
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /*Titulo del quiz, siempre va estar presente*/
 .container_title{
@@ -42,107 +21,17 @@ body{
 }
 /*--------INICIO--------*/
 /*Botones del inicio antes de comenzar el quiz*/
-.container_button{
-    /*Contenedor de los botones*/
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.button_quiz{
-    /*Los botones del inicio, antes de empezar el quiz*/
-    width: 100%;
-    padding: 5px 20px;
-    border: 2px solid var(--azulNeon);
-    background-color: transparent;
-    color: var(--azulNeon);
-    border-radius: 20px;
-    font-size: 1.5em;
-    cursor: pointer;
-    text-shadow: 0px 0px 20px var(--azulNeon);
-    transition: all ease-in .2s;
-}
-
-.button_quiz:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px 0px var(--azulNeon);
-}
 
 .regresar{
     width: 100%;
 }
 /*----------QUIZ----------*/
 
-.container_quiz{
-    /*Contenedor padre de todo el quiz*/
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .quiz{
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.quiz_pokemon{
-    /*Contenedor donde se encuentra la imagen del pokemon y el texto*/
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.container_aviso{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 275px;
-    align-items: center;
-}
-
-.img_quiz{
-    /*Imagen del pokemon*/
-    width: 250px;
-    height: 250px;
-    filter: drop-shadow(0px 0px 15px var(--azulNeon)) contrast(0%);
-    transition: filter 600ms ease-in;
-}
-
-.pokemon_text{
-    /*Texto del pokemon*/
-    color: var(--azulNeon);
-    font-family: 'Teko';
-    text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
-    text-align: center;
-    flex-grow: 1;
-}
-
-.icon_next{
-    color: var(--azulNeon);
-    font-size: 2em;
-    text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
-    text-align: center;
-    width: 45px;
-    padding: 5px;
-    border-radius: 50%;
-    border: 2px solid var(--azulNeon);
-    cursor: pointer;
-    transition: all ease-in .2s;
-    display: none;
-}
-
-.icon_next:hover{
-    box-shadow: 0px 0px 15px 0px var(--azulNeon);
-}
-
-/*Opciones del quiz*/
-.quiz_options{
-    /*Contenedor de todas las opciones*/
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .quiz_options-item{
@@ -156,10 +45,6 @@ body{
     text-shadow: 0px 0px 20px var(--azulNeon);
     transition: all ease-in .2s;
     flex-basis: 200px;
-}
-
-.quiz_options-item::first-letter{
-    text-transform: uppercase;
 }
 
 .quiz_options-item:hover{
@@ -184,16 +69,9 @@ body{
         margin-bottom: 10px;
     }
 
-    .quiz_pokemon{
-        justify-content: center;
-    }
+    
 
-    .container_button{
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 92px);
-    }
-
+    
     .quiz{
         gap: 10px;
     }
@@ -209,26 +87,15 @@ body{
 
     
 
-    .container_aviso{
-        flex-direction: row;
-        padding-inline: 20px;
-    }
 
-    .pokemon_text{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        height: 70px;
-    }
+
+    
 
     .container_quiz{
         gap: 0px;
     }
 
-    .img_quiz{
-        width: 220px;
-        height: 220px;
-    }
+    
 
     .loader{
         height: calc(100vh - 92px);

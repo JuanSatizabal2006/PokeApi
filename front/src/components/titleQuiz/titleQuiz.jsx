@@ -1,9 +1,10 @@
 import React from 'react'
+import "./titleQuiz.css"
 
 const TitleQuiz = () => {
   return (
-    <header class="container_title">
-        <h1 class="title_quiz">¡Adivina el Pokemon!</h1>
+    <header className="container_title">
+        <h1 className="title_quiz">¡Adivina el Pokemon!</h1>
     </header>
   )
 }

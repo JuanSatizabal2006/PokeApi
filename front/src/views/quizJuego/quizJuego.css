@@ -1,0 +1,10 @@
+.all_container_options{
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.container_options{
+    max-width: 580px;
+    width: 100%;
+    height: auto;
+}
