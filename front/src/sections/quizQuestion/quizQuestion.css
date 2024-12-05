@@ -1,32 +1,5 @@
-/*.cajaPadre{
-    width: 200px;
-    height: 200px;
-    margin: 50px 0px 0px 50px;
-    padding: 10px;
-    position: relative;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
-.cajaBackground{
-    position: absolute;
-    top: 0;
-    background-color: #ffffff50;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    filter: blur(5px);
-}
-
-.cajaHijo{
-    z-index: 2;
-}
-
-.cajaHijo p{
-    font-size: 1.5em;
-    color: aqua;
-}*/
 .all_container_quiz{
     display: flex;
     justify-content: center;
@@ -55,6 +28,10 @@
     transition: filter 600ms ease-in;
 }
 
+.revelar{
+    filter: drop-shadow(0px 0px 15px var(--azulNeon)) contrast(100%) !important;
+}
+
 .container_aviso{
     display: flex;
     flex-direction: column;
@@ -64,12 +41,12 @@
 }
 
 .pokemon_text{
-    /*Texto del pokemon*/
     color: var(--azulNeon);
     font-family: 'Teko';
     text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
     text-align: center;
     flex-grow: 1;
+    font-size: 10em;
 }
 
 .icon_next{
@@ -83,19 +60,28 @@
     border: 2px solid var(--azulNeon);
     cursor: pointer;
     transition: all ease-in .2s;
-    display: none;
 }
 
 .icon_next:hover{
     box-shadow: 0px 0px 15px 0px var(--azulNeon);
 }
 
+.respuesta{
+    font-size: 4.2em !important;
+}
+
+.ocultar{
+    display: none;
+}
+
 /*Opciones del quiz*/
 .quiz_options{
     /*Contenedor de todas las opciones*/
     display: flex;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    min-height: 110px;
 }
 
 @media screen and (width < 550px){

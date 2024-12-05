@@ -1,6 +1,5 @@
 .button_quiz{
     /*Los botones del inicio, antes de empezar el quiz*/
-    width: auto;
     padding: 5px 20px;
     border: 2px solid var(--azulNeon);
     background-color: transparent;
@@ -12,6 +11,7 @@
     transition: all ease-in .2s;
     text-decoration: none;
     text-align: center;
+    max-height: 45px;
 }
 
 .button_quiz:hover{
