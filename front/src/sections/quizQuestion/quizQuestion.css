@@ -59,7 +59,7 @@
     border-radius: 50%;
     border: 2px solid var(--azulNeon);
     cursor: pointer;
-    transition: all ease-in .2s;
+    transition: all ease-in .1s;
 }
 
 .icon_next:hover{

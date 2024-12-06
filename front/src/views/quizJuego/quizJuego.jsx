@@ -3,6 +3,7 @@ import QuizQuestion from "../../sections/quizQuestion/quizQuestion";
 import NavQuiz from "../../sections/navQuiz/navQuiz";
 import TitleQuiz from "../../components/titleQuiz/titleQuiz";
 import "./quizJuego.css";
+import { ProvPunt } from "../../hooks/usePuntaje";
 
 const QuizJuego = () => {
   return (
@@ -10,8 +11,10 @@ const QuizJuego = () => {
       <TitleQuiz />
       <main className="all_container_options">
         <div className="container_options">
-          <NavQuiz />
-          <QuizQuestion />
+          <ProvPunt>
+            <NavQuiz />
+            <QuizQuestion />
+          </ProvPunt>
         </div>
       </main>
     </>
