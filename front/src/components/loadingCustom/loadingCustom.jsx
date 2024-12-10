@@ -4,7 +4,7 @@ import './loadingCustom.css'
 const LoadingCustom = ({text}) => {
   return (
     <div className="loader">
-      <div data-glitch="Loading..." className="glitch">
+      <div data-glitch={`${text}...`} className="glitch">
         {text}...
       </div>
     </div>
