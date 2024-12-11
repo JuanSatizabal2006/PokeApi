@@ -11,3 +11,11 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (width < 550px) {
+    .all_container_options{
+        height: calc(100vh - 82px);
+        padding-top: 10px;
+        align-items: start;
+    }
+}   

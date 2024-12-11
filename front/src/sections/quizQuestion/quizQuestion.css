@@ -95,6 +95,7 @@
 @media screen and (width < 550px){
     .quiz_pokemon{
         justify-content: center;
+        flex-direction: row;
     }
 
     .img_quiz{
@@ -103,8 +104,8 @@
     }
 
     .container_aviso{
-        flex-direction: row;
         padding-inline: 20px;
+        width: auto;
     }
 
     .pokemon_text{

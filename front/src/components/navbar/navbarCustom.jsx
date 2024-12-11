@@ -20,8 +20,6 @@ const NavbarCustom = () => {
                     <i className="fa-regular fa-circle-question"></i>
                 </Link>
             </div>
-
-            <i className="fa-solid fa-filter" id="button_filters"></i>
             <img src="./public/img/icons/iconPokebola.png" alt="" className="icon_poke" /> 
         </div>
     </nav>

@@ -18,7 +18,15 @@
     .container_button{
         justify-content: center;
         align-items: center;
-        height: calc(100vh - 92px);
+        height: 100%;
+    }
+
+    .all_container{
+        height: calc(100vh - 82px);
+    }
+
+    .container_button .button_quiz{
+        width: 100%;
     }
 
 }
