@@ -1,0 +1,87 @@
+/*TODO LO RELACIONADO CON LA CARTA GRANDE*/
+.container_big_pokemon{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(350px, 2fr) minmax(300px, 1fr);
+    color: #ffffff;
+}
+
+/*ESTILO DE INFORMACION DEL NOMBRE Y ESTADISTICAS*/
+.container_big_pokemon_title-stats{
+    /*Contenedor padre donde se ve el nombre/numero del pokemon y sus estadisticas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*ESTILOS DE LA IMAGEN DEL POKEMON*/
+.container_big_pokemon_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.responsiveTablet .box_big_pokemon_info{
+    display: none;
+}
+
+@media screen and (width < 550px){
+    .container_big_pokemon{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 15px;
+    }
+
+    .container_big_pokemon_title-stats{
+        gap: 15px;
+    }
+
+    .container_big_pokemon_img{
+        padding-inline: 20px;
+    }
+
+    .container_big_pokemon_info{
+        gap: 15px;
+    }
+
+}
+
+@media screen and (width <= 900px) and (width > 420px){
+
+    .container_big_pokemon{
+        grid-template-columns: minmax(350px, 1fr);
+        gap: 30px;
+    }
+
+    .container_big_pokemon_title-stats{
+        gap: 20px;
+    }
+
+    .container_big_pokemon_img{
+        overflow: inherit;
+    }
+
+    .container_big_pokemon_info{
+        gap: 20px;
+    }
+    
+    /*ARREGLO PARA LA INFORMACION EN PANTALLAS DE TABLET*/
+    
+    .container_big_pokemon_info .box_big_pokemon_info{
+        /*OCULTAR INFORMACION DE CARACTERISTICAS EN LA PARTE INFERIOR*/
+        display: none;
+    }
+
+    .responsiveTablet{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .responsiveTablet .box_big_pokemon_info{
+        display: flex;
+    }
+}
