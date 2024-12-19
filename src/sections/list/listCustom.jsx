@@ -3,7 +3,7 @@ import { usePokemon } from "../../hooks/usePokemon";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LoadingCustom from "../../components/loadingCustom/loadingCustom";
 import CustomCard from "../../components/customCard/customCard";
-import './listCustom.css'
+import "./listCustom.css";
 
 const ListCustom = () => {
   const { morePokemons, pokemons, more } = usePokemon();
@@ -13,8 +13,12 @@ const ListCustom = () => {
       dataLength={pokemons.length}
       next={morePokemons}
       hasMore={more}
-      loader={<LoadingCustom />}
-      endMessage={<p>FIN</p>}
+      loader={<LoadingCustom text={"Cargando"} />}
+      endMessage={
+        <div className="boxFin">
+          <p>¡Has llegado al final!</p>
+        </div>
+      }
       className="allContainer"
     >
       {pokemons.map((value, index) => (
