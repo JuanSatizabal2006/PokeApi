@@ -10,7 +10,7 @@ El objetivo principal de este proyecto es practicar la implementación de un scr
 
 - **Scroll infinito:** Carga los Pokémon de manera progresiva mientras el usuario se desplaza hacia abajo, implementado con la librería [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component).
 - **Listado interactivo:** Muestra los primeros 500 Pokémon.
-- **Detalle de Pokémon:** Al hacer clic en un Pokémon, se despliega información adicional como estadísticas, habilidades y más.
+- **Detalle de Pokémon:** Al hacer clic en un Pokémon, te dirige a una nueva pagina con información adicional como estadísticas, habilidades y más.
 
 ## 🌟 Tecnologías Utilizadas
 
