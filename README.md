@@ -21,4 +21,4 @@ El objetivo principal de este proyecto es practicar la implementación de un scr
 ## 🌐 Publicación
 
 Este proyecto está disponible en Netlify:  
-[🔗 Listado de 500 Pokémon en Netlify](https://poke-scroll-infinite.netlify.app/) <!-- Reemplaza # con el enlace real -->
+[🔗 Listado de 500 Pokémon en Netlify](https://poke-scroll-infinite.netlify.app/)
